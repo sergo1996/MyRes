@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: "Quicksand", sans-serif;
+}
+
+.imgdel{
+  height: 15px;
+  width: 15px;
+  position: fixed;
+  left: 10px;
+  top: 45px;
+  flex: 3332;
+  z-index: 435;
+  cursor: pointer;
+}
+.app {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.sidebar {
+  flex: 3;
+  background: #363636;
+
+
+  &__container {
+    padding: 0 40px;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    max-height: 100vh;
+  }
+
+  &__nav {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content: space-between;
+    max-height: 10vh;
+
+    &-item {
+      cursor: pointer;
+      padding: 7px 0;
+      transition: 250ms;
+
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+
+      &--focus {
+        text-decoration: underline;
+        color: #6e93d6;
+      }
+      &:hover {
+        color: #6e93d6;
+      }
+    }
+  }
+
+  &__content {
+    max-height: 100vh;
+
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__image {
+    flex: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__info {
+    flex: 4;
+  }
+
+  &__contact {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &-button {
+      background: #2b2b2b;
+      border: 1px solid #cacaca;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 14px;
+      padding: 8px 15px;
+      color: #cacaca;
+      text-transform: uppercase;
+      outline: none;
+      max-width: 120px;
+      cursor: pointer;
+      transition: 250ms;
+
+      &:hover {
+        border: 1px solid #6e93d6;
+        color: #373a3e;
+      }
+    }
+
+    &-email {
+      font-style: normal;
+      font-weight: 300;
+      font-size: 14px;
+      color: #cacaca;
+    }
+
+    &-svg {
+      display: flex;
+      justify-content: space-between;
+
+      &--link {
+        display: block;
+      }
+    }
+  }
+}
+
+.contact-svg {
+  transition: 250ms;
+  padding: 10px;
+  box-sizing: content-box;
+
+  fill: white;
+  &:hover {
+    fill: #6e93d6;
+  }
+}

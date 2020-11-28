@@ -1,0 +1,44 @@
+.skills {
+  &-svg {
+    &--html {
+      fill: #f16529;
+    }
+    &--css {
+      fill: #409ad6;
+    }
+    &--js {
+      fill: #f7df1e;
+    }
+    &--gulp {
+      fill: #d14747;
+    }
+    &--react {
+      fill: #61dafb;
+    }
+    &--node {
+      fill: #7fbd42;
+    }
+  }
+  &-container {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+
+    &__svg {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      cursor: pointer;
+
+      &--level {
+        margin-top: 15px;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        color: #cacaca;
+      }
+    }
+  }
+}
