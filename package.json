@@ -2,7 +2,6 @@
   "name": "myres",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://sergo1996.github.io/myres",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.32",
     "@fortawesome/free-solid-svg-icons": "^5.15.1",
@@ -26,7 +25,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+ "deploy": "netlify deploy -p"
+
   },
   "eslintConfig": {
     "extends": [
